@@ -34,14 +34,6 @@ jobs:
         shell: bash -l {0}
         run: conda list
 
-      - name: install weldx kernel
-        shell: bash -l {0}
-        run: ipython kernel install --user --name=weldx
-
-      - name: develop install
-        shell: bash -l {0}
-        run: pip install -e .
-
       - name: Build docs
         shell: bash -l {0}
         run: sphinx-build -n -b html -d build/doctrees docs build/html --keep-going
