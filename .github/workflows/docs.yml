@@ -1,4 +1,5 @@
 name: documentation
+on: [push]
 
 jobs:
   build:
